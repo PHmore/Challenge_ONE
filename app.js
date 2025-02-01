@@ -1,11 +1,18 @@
 //O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
-let listaamigos = [];
-nomeAmigo = "";
 
-function limparCampo() {
+let listaamigos = [];
+let nomeAmigo = "";
+
+function limparCampo(campoID) {
     
-    let amigo = document.getElementById('amigo');
-    amigo.value = '';
+    let campo = document.getElementById(campoID);
+    campo.value = '';
+    campo.innerHTML = '';
+}
+
+function inserirCampo(campoID,campoTexto) {
+    campo = document.getElementById(campoID);
+    campo.innerHTML = campoTexto;
 }
 
 function adicionarAmigo() {
@@ -14,15 +21,19 @@ function adicionarAmigo() {
     console.log(`Amigo pego ${amigo}`);
     listaamigos.push(amigo);
     console.log(`Amigos: ${listaamigos} tamanho: ${listaamigos.length}`);
-    listahtml = document.getElementById('listaAmigos');
+    
     nomeAmigo = nomeAmigo + `<li>${amigo}</li>`;
     
     // for (let index = 0; index < listaamigos.length; index++) {
     //     nomeAmigo = nomeAmigo + `<li>${listaamigos[index]}</li>`;    
     // }
-    listahtml.innerHTML = nomeAmigo;
-    limparCampo();
 
+    // listahtml = document.getElementById('listaAmigos');
+    // listahtml.innerHTML = nomeAmigo;
+
+    inserirCampo('listaAmigos',nomeAmigo);
+    limparCampo('amigo');
+    limparCampo('resultado');
     
 }
 
@@ -35,9 +46,21 @@ function gerarNumeroAleat(numeroLimite = listaamigos.length) {
 }
 
 function sortearAmigo() {
-    // TODO aqui será sorteado o amigo secreto dentre as listas de amigos disponíveis
     numeroAleat = gerarNumeroAleat();
     amigoSorteado = listaamigos[numeroAleat];
+    console.log(`amigo sorteado: ${amigoSorteado}`);
     
+    listaamigos = [];
+    nomeAmigo = "";
+    limparCampo('listaAmigos');
+
+    if(amigoSorteado == undefined){
+        console.log('Não há amigos na lista');
+        textoResultado = "Não há amigos na lista";
+    } else {
+        textoResultado = `Amigo sorteado: ${amigoSorteado}`;
+    }
+
+    inserirCampo('resultado',textoResultado);
 }
 
