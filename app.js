@@ -15,14 +15,30 @@ function inserirCampo(campoID,campoTexto) {
     campo.innerHTML = campoTexto;
 }
 
+function apenasEspacos(str) {
+    // Faz a validação utilizando um regex
+    console.log(`Contém apenas espaços?: ${/^\s*$/.test(str)}`);
+    
+    return /^\s*$/.test(str);
+  }
+
 function adicionarAmigo() {
     
     let amigo = document.getElementById('amigo').value;
-    console.log(`Amigo pego ${amigo}`);
-    listaamigos.push(amigo);
-    console.log(`Amigos: ${listaamigos} tamanho: ${listaamigos.length}`);
     
-    nomeAmigo = nomeAmigo + `<li>${amigo}</li>`;
+    if (apenasEspacos(amigo)) {
+        console.log('Adicione um nome válido de amigo');
+        
+    }else {
+        listaamigos.push(amigo);
+
+        console.log(`Nome amigo: ${amigo}`);
+        console.log(`Amigos: ${listaamigos} tamanho: ${listaamigos.length}`);
+        
+        nomeAmigo = nomeAmigo + `<li>${amigo}</li>`;
+        inserirCampo('listaAmigos',nomeAmigo);
+    }
+    
     
     // for (let index = 0; index < listaamigos.length; index++) {
     //     nomeAmigo = nomeAmigo + `<li>${listaamigos[index]}</li>`;    
@@ -31,7 +47,7 @@ function adicionarAmigo() {
     // listahtml = document.getElementById('listaAmigos');
     // listahtml.innerHTML = nomeAmigo;
 
-    inserirCampo('listaAmigos',nomeAmigo);
+    
     limparCampo('amigo');
     limparCampo('resultado');
     
@@ -46,6 +62,7 @@ function gerarNumeroAleat(numeroLimite = listaamigos.length) {
 }
 
 function sortearAmigo() {
+    
     numeroAleat = gerarNumeroAleat();
     amigoSorteado = listaamigos[numeroAleat];
     console.log(`amigo sorteado: ${amigoSorteado}`);
