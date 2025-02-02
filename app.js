@@ -86,11 +86,11 @@ function sortearAmigo() {
 
     if(amigoSorteado == undefined){
         console.log('Não há amigos na lista');
-        textoResultado = "Não há amigos na lista";
+        textoResultado = "<li>Não há amigos na lista</li>";
         corResultado(true,'resultado');
         
     } else {
-        textoResultado = `Amigo sorteado: ${amigoSorteado}`;
+        textoResultado = `<li>Amigo sorteado: ${amigoSorteado}</li>`;
         corResultado(false,'resultado');
     }
 
