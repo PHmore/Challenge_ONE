@@ -15,6 +15,18 @@ function inserirCampo(campoID,campoTexto) {
     campo.innerHTML = campoTexto;
 }
 
+function corResultado(flag,campoID) {
+    if (flag == true) {
+        campo = document.getElementById(campoID);
+        campo.classList.remove('result-list');
+        campo.classList.add('error_result-list');
+    } else {
+        campo = document.getElementById(campoID);
+        campo.classList.add('result-list');
+        campo.classList.remove('error_result-list');
+    }
+}
+
 function apenasEspacos(str) {
     // Faz a validação utilizando um regex
     console.log(`Contém apenas espaços?: ${/^\s*$/.test(str)}`);
@@ -28,6 +40,7 @@ function adicionarAmigo() {
     
     if (apenasEspacos(amigo)) {
         console.log('Adicione um nome válido de amigo');
+        alert('Adicione um nome válido de amigo');
         
     }else {
         listaamigos.push(amigo);
@@ -62,7 +75,7 @@ function gerarNumeroAleat(numeroLimite = listaamigos.length) {
 }
 
 function sortearAmigo() {
-    
+
     numeroAleat = gerarNumeroAleat();
     amigoSorteado = listaamigos[numeroAleat];
     console.log(`amigo sorteado: ${amigoSorteado}`);
@@ -74,8 +87,11 @@ function sortearAmigo() {
     if(amigoSorteado == undefined){
         console.log('Não há amigos na lista');
         textoResultado = "Não há amigos na lista";
+        corResultado(true,'resultado');
+        
     } else {
         textoResultado = `Amigo sorteado: ${amigoSorteado}`;
+        corResultado(false,'resultado');
     }
 
     inserirCampo('resultado',textoResultado);
