@@ -29,17 +29,17 @@ Este projeto faz parte do desafio da formação ONE (Oracle Next Education) em p
 
 ## 🎲 Exemplo de Uso
 
-Adicione os nomes que serão sorteados
+1. Adicione os nomes que serão sorteados
 
-Image 1
+![image](https://github.com/user-attachments/assets/5aad57aa-cabe-4784-b160-db355b7f3005)
 
-Após adicionados clique em "Sortear amigo"
+2. Após adicionados clique em "Sortear amigo"
 
-Image 2
+![image](https://github.com/user-attachments/assets/90cb1bf0-0171-4a90-b313-e111e011408a)
 
-O programa selecionará aleatóriamente um amigo dentro da lista
+3. O programa selecionará aleatóriamente um amigo dentro da lista
 
-Image 3
+![image](https://github.com/user-attachments/assets/89c1a3f5-a13b-4f94-bb5e-0643020d5655)
 
 ---
 Feito para o desafio da Alura e Oracle Next Education por PHmore.
