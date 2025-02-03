@@ -1,7 +1,8 @@
 <h1 align="center"> Desafio Amigo Secreto - Formação ONE Alura & Oracle </h1>
 
 ![Badge Desenvolvido](https://img.shields.io/static/v1?label=STATUS&message=DESENVOLVIDO&color=GREEN&style=for-the-badge)
-![Badge ONE](https://cdn1.gnarususercontent.com.br/6/409216/ff043987-239b-4661-bdb1-7f4ca6092c48.png)
+
+<img src="https://cdn1.gnarususercontent.com.br/6/409216/ff043987-239b-4661-bdb1-7f4ca6092c48.png" alt="Badge ONE" width="100">
 
 ##  Descrição
 
