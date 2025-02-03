@@ -49,5 +49,5 @@ Feito atráves do github pages
 [Acesse o site](https://phmore.github.io/Challenge_ONE/)
 
 ---
-Feito para o desafio da Alura e Oracle Next Education por PHmore.
+Feito para o desafio da Alura e Oracle Next Education por [PHmore](https://github.com/PHmore).
 
