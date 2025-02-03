@@ -41,6 +41,11 @@ Este projeto faz parte do desafio da formação ONE (Oracle Next Education) em p
 
 ![image](https://github.com/user-attachments/assets/89c1a3f5-a13b-4f94-bb5e-0643020d5655)
 
+## Deploy
+
+Feito atráves do github pages
+[Acesse o site](https://phmore.github.io/Challenge_ONE/)
+
 ---
 Feito para o desafio da Alura e Oracle Next Education por PHmore.
 
