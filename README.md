@@ -1,8 +1,8 @@
-<h1 align="center"> Sorteador de amigo secreto </h1>
+<h1 align="center"> Desafio Amigo Secreto - Formação ONE Alura & Oracle </h1>
 
-![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Badge Desenvolvido](https://img.shields.io/static/v1?label=STATUS&message=DESENVOLVIDO&color=GREEN&style=for-the-badge)
 
-# Desafio Amigo Secreto - Formação ONE Alura & Oracle
+##  Descrição
 
 Este projeto faz parte do desafio da formação ONE (Oracle Next Education) em parceria com a Alura. O objetivo é desenvolver um programa que realiza o sorteio do Amigo Secreto com base em uma lista de nomes fornecida como entrada.
 
@@ -29,18 +29,17 @@ Este projeto faz parte do desafio da formação ONE (Oracle Next Education) em p
 
 ## 🎲 Exemplo de Uso
 
-Entrada:
-```
-Alice, Bob, Carol, David
-```
+Adicione os nomes que serão sorteados
 
-Saída (exibida na interface):
-```
-Alice -> Bob
-Bob -> Carol
-Carol -> David
-David -> Alice
-```
+Image 1
+
+Após adicionados clique em "Sortear amigo"
+
+Image 2
+
+O programa selecionará aleatóriamente um amigo dentro da lista
+
+Image 3
 
 ---
 Feito para o desafio da Alura e Oracle Next Education por PHmore.
